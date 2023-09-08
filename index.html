@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Compownt</title>
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+  <!-- Google fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+  </style>
+
+  <!-- Stylings -->
+  <style>
+    /* Declaring color variables */
+    :root {
+      --White: hsl(0, 0%, 100%);
+      --Light_gray: hsl(212, 45%, 89%);
+      --Grayish_blue: hsl(220, 15%, 55%);
+      --Dark_blue: hsl(218, 44%, 22%);
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      outline: none;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body,
+    html {
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--Light_gray);
+    }
+
+    .qr-component-box {
+      width: 220px;
+      height: fit-content;
+      padding: 10px 10px 20px 10px;
+      border-radius: 15px;
+      background-color: var(--White);
+      box-shadow: 1px 1px 10px 1px gray;
+    }
+
+    .qr-image {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 15px;
+      text-align: center;
+      color: var(--Dark_blue);
+    }
+
+    h4,
+    p {
+      padding: 15px 7px 0px 7px;
+    }
+
+    p {
+      font-size: 10px;
+      text-align: center;
+      color: var(--Grayish_blue);
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="qr-component-box">
+    <div class="qr-image">
+      <img src="images/image-qr-code.png" alt="">
+    </div>
+    <div class="info-box">
+      <h4>Improve your front-end skills by bulding projects</h4>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+</body>
+
+</html>
